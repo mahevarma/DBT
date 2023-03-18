@@ -2656,3 +2656,34 @@ limit 500
 2023-03-18 20:05:39.142207 (Thread-276): handling status request
 2023-03-18 20:05:39.143479 (Thread-276): 20:05:39  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e5c96243-c728-4576-9434-b13330852e14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f340a3d3190>]}
 2023-03-18 20:05:39.143976 (Thread-276): sending response (<Response 1610 bytes [200 OK]>) to 10.0.194.98
+2023-03-18 20:05:49.801240 (Thread-277): 20:05:49  checksum: 9f5971860ea7956c5d0d162f1c96671df61b5ad9db5c4152918680483cec5347, vars: {}, profile: user, target: None, version: 1.4.5
+2023-03-18 20:05:49.819773 (Thread-277): 20:05:49  Unable to do partial parsing because config vars, config profile, or config target have changed
+2023-03-18 20:05:49.820198 (Thread-277): 20:05:49  previous checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, current checksum: 9f5971860ea7956c5d0d162f1c96671df61b5ad9db5c4152918680483cec5347
+2023-03-18 20:05:49.820674 (Thread-277): 20:05:49  Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e5c96243-c728-4576-9434-b13330852e14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f340cc44a30>]}
+2023-03-18 20:05:50.374633 (Thread-278): handling status request
+2023-03-18 20:05:50.395647 (Thread-278): 20:05:50  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e5c96243-c728-4576-9434-b13330852e14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33f63316d0>]}
+2023-03-18 20:05:50.402653 (Thread-278): sending response (<Response 180 bytes [200 OK]>) to 10.0.194.98
+2023-03-18 20:05:51.230370 (Thread-277): 20:05:51  1699: static parser successfully parsed staging/stg_customers.sql
+2023-03-18 20:05:51.233600 (Thread-277): 20:05:51  1699: static parser successfully parsed staging/stg_payments.sql
+2023-03-18 20:05:51.236424 (Thread-277): 20:05:51  1603: static parser failed on staging/stg_orders.sql
+2023-03-18 20:05:51.241345 (Thread-277): 20:05:51  1602: parser fallback to jinja rendering on staging/stg_orders.sql
+2023-03-18 20:05:51.242954 (Thread-277): 20:05:51  1699: static parser successfully parsed intermediate/int_customer_order_history_joined.sql
+2023-03-18 20:05:51.245984 (Thread-277): 20:05:51  1603: static parser failed on intermediate/int_order_payments_pivoted.sql
+2023-03-18 20:05:51.251748 (Thread-277): 20:05:51  1602: parser fallback to jinja rendering on intermediate/int_order_payments_pivoted.sql
+2023-03-18 20:05:51.253102 (Thread-277): 20:05:51  1603: static parser failed on marts/revenue.sql
+2023-03-18 20:05:51.258315 (Thread-277): 20:05:51  1602: parser fallback to jinja rendering on marts/revenue.sql
+2023-03-18 20:05:51.259765 (Thread-277): 20:05:51  1699: static parser successfully parsed marts/orders.sql
+2023-03-18 20:05:51.262508 (Thread-277): 20:05:51  1603: static parser failed on marts/example_develop_metric.sql
+2023-03-18 20:05:51.267357 (Thread-277): 20:05:51  1602: parser fallback to jinja rendering on marts/example_develop_metric.sql
+2023-03-18 20:05:51.332438 (Thread-277): 20:05:51  1603: static parser failed on dbt_metrics_default_calendar.sql
+2023-03-18 20:05:51.339659 (Thread-277): 20:05:51  1602: parser fallback to jinja rendering on dbt_metrics_default_calendar.sql
+2023-03-18 20:05:51.591562 (Thread-277): 20:05:51  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e5c96243-c728-4576-9434-b13330852e14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33f3bda580>]}
+2023-03-18 20:05:52.568714 (Thread-279): handling status request
+2023-03-18 20:05:52.569203 (Thread-279): 20:05:52  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e5c96243-c728-4576-9434-b13330852e14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33f3bda9d0>]}
+2023-03-18 20:05:52.569854 (Thread-279): sending response (<Response 6515 bytes [200 OK]>) to 10.0.194.98
+2023-03-18 20:05:57.417112 (Thread-280): handling status request
+2023-03-18 20:05:57.417641 (Thread-280): 20:05:57  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e5c96243-c728-4576-9434-b13330852e14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33f3bdabb0>]}
+2023-03-18 20:05:57.418250 (Thread-280): sending response (<Response 6515 bytes [200 OK]>) to 10.0.194.98
+2023-03-18 20:06:10.009211 (Thread-281): handling status request
+2023-03-18 20:06:10.009790 (Thread-281): 20:06:10  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e5c96243-c728-4576-9434-b13330852e14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33f3bdac70>]}
+2023-03-18 20:06:10.010396 (Thread-281): sending response (<Response 6515 bytes [200 OK]>) to 10.0.194.98
