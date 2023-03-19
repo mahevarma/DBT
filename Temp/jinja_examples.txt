@@ -1,0 +1,36 @@
+{#
+{% set x = 'hello world' %}
+{% set x2 = 'hello world 2' %}
+
+select '{{ x }} {{ x2 }}', 'this is jinja code'
+
+{% set x = ['A','B','C','D'] %}
+{{x[0]}}
+
+{% for x in x %}
+number is {{x}}
+
+{%endfor%}
+
+{% set temperature = 55 %}
+
+{% if temperature < 55 %}
+temp is too high
+
+{% else %}
+
+not too high
+
+{% endif %}
+#}
+{%- set foods = ["Carrot", "hotdog", "pizza", "burger"] -%}
+
+{%- for food in foods %}
+{% if food == "burger" -%} {% set food_type = "snack" %}
+{%- else -%} 
+{%- set food_type = "fruit" -%}
+{%- endif -%}
+
+the humber {{ food }} is {{ food_type }}
+
+{%- endfor -%}
